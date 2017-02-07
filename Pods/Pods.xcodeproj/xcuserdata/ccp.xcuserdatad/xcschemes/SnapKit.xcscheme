@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7ECAA9F21E495D8F000C46AF"
-               BuildableName = "CCPHud.app"
-               BlueprintName = "CCPHud"
-               ReferencedContainer = "container:CCPHud.xcodeproj">
+               BlueprintIdentifier = "5A283516539001EB62ABDBE7540555BC"
+               BuildableName = "SnapKit.framework"
+               BlueprintName = "SnapKit"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,15 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7ECAA9F21E495D8F000C46AF"
-            BuildableName = "CCPHud.app"
-            BlueprintName = "CCPHud"
-            ReferencedContainer = "container:CCPHud.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -51,16 +42,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7ECAA9F21E495D8F000C46AF"
-            BuildableName = "CCPHud.app"
-            BlueprintName = "CCPHud"
-            ReferencedContainer = "container:CCPHud.xcodeproj">
+            BlueprintIdentifier = "5A283516539001EB62ABDBE7540555BC"
+            BuildableName = "SnapKit.framework"
+            BlueprintName = "SnapKit"
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -70,16 +60,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7ECAA9F21E495D8F000C46AF"
-            BuildableName = "CCPHud.app"
-            BlueprintName = "CCPHud"
-            ReferencedContainer = "container:CCPHud.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

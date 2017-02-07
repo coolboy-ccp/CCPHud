@@ -12,9 +12,13 @@
 		7ECAA9FC1E495D8F000C46AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ECAA9FA1E495D8F000C46AF /* Main.storyboard */; };
 		7ECAA9FE1E495D8F000C46AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ECAA9FD1E495D8F000C46AF /* Assets.xcassets */; };
 		7ECAAA011E495D8F000C46AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ECAA9FF1E495D8F000C46AF /* LaunchScreen.storyboard */; };
+		7ECAAA091E495E97000C46AF /* CCPHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECAAA081E495E97000C46AF /* CCPHud.swift */; };
+		F37E063DF9CAE819FEC87191 /* Pods_CCPHud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0742A22AB8E7EF37BDAE2125 /* Pods_CCPHud.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0742A22AB8E7EF37BDAE2125 /* Pods_CCPHud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CCPHud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78CDADF99E68BFE2B47DF9FA /* Pods-CCPHud.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCPHud.release.xcconfig"; path = "Pods/Target Support Files/Pods-CCPHud/Pods-CCPHud.release.xcconfig"; sourceTree = "<group>"; };
 		7ECAA9F31E495D8F000C46AF /* CCPHud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCPHud.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ECAA9F61E495D8F000C46AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7ECAA9F81E495D8F000C46AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		7ECAA9FD1E495D8F000C46AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7ECAAA001E495D8F000C46AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7ECAAA021E495D8F000C46AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7ECAAA081E495E97000C46AF /* CCPHud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCPHud.swift; sourceTree = "<group>"; };
+		D60E795CBB5971546CFA7F25 /* Pods-CCPHud.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCPHud.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CCPHud/Pods-CCPHud.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F37E063DF9CAE819FEC87191 /* Pods_CCPHud.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		213891924E983895A3C05EC9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D60E795CBB5971546CFA7F25 /* Pods-CCPHud.debug.xcconfig */,
+				78CDADF99E68BFE2B47DF9FA /* Pods-CCPHud.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7ECAA9EA1E495D8F000C46AF = {
 			isa = PBXGroup;
 			children = (
 				7ECAA9F51E495D8F000C46AF /* CCPHud */,
 				7ECAA9F41E495D8F000C46AF /* Products */,
+				213891924E983895A3C05EC9 /* Pods */,
+				D2261B91D4D3AE2108F93C92 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +74,21 @@
 			children = (
 				7ECAA9F61E495D8F000C46AF /* AppDelegate.swift */,
 				7ECAA9F81E495D8F000C46AF /* ViewController.swift */,
+				7ECAAA081E495E97000C46AF /* CCPHud.swift */,
 				7ECAA9FA1E495D8F000C46AF /* Main.storyboard */,
 				7ECAA9FD1E495D8F000C46AF /* Assets.xcassets */,
 				7ECAA9FF1E495D8F000C46AF /* LaunchScreen.storyboard */,
 				7ECAAA021E495D8F000C46AF /* Info.plist */,
 			);
 			path = CCPHud;
+			sourceTree = "<group>";
+		};
+		D2261B91D4D3AE2108F93C92 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0742A22AB8E7EF37BDAE2125 /* Pods_CCPHud.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7ECAAA051E495D8F000C46AF /* Build configuration list for PBXNativeTarget "CCPHud" */;
 			buildPhases = (
+				93A3C9083C7D4FC77BB3808A /* [CP] Check Pods Manifest.lock */,
 				7ECAA9EF1E495D8F000C46AF /* Sources */,
 				7ECAA9F01E495D8F000C46AF /* Frameworks */,
 				7ECAA9F11E495D8F000C46AF /* Resources */,
+				7F7D70858967F9013E47FBC3 /* [CP] Embed Pods Frameworks */,
+				13F9DC0668B21A08BD26DBEB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -97,6 +127,7 @@
 					7ECAA9F21E495D8F000C46AF = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = H2969SVRUG;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -132,6 +163,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		13F9DC0668B21A08BD26DBEB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CCPHud/Pods-CCPHud-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F7D70858967F9013E47FBC3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CCPHud/Pods-CCPHud-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93A3C9083C7D4FC77BB3808A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7ECAA9EF1E495D8F000C46AF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -139,6 +218,7 @@
 			files = (
 				7ECAA9F91E495D8F000C46AF /* ViewController.swift in Sources */,
 				7ECAA9F71E495D8F000C46AF /* AppDelegate.swift in Sources */,
+				7ECAAA091E495E97000C46AF /* CCPHud.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +337,9 @@
 		};
 		7ECAAA061E495D8F000C46AF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D60E795CBB5971546CFA7F25 /* Pods-CCPHud.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = H2969SVRUG;
 				INFOPLIST_FILE = CCPHud/Info.plist;
@@ -270,7 +352,9 @@
 		};
 		7ECAAA071E495D8F000C46AF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78CDADF99E68BFE2B47DF9FA /* Pods-CCPHud.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = H2969SVRUG;
 				INFOPLIST_FILE = CCPHud/Info.plist;
@@ -300,6 +384,7 @@
 				7ECAAA071E495D8F000C46AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
